@@ -3,19 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #F2EEE3;
+  --foreground: #000;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+body {
+  cursor: url('/Arrow-Cursor-2--Streamline-Core.svg'), auto;
+}
+
+a, button {
+  cursor: url('/Hand-Cursor--Streamline-Core.svg'), auto;
+}
+
+::selection {
+  background-color: #2AAD5F;
+  color: white;
 }
