@@ -48,8 +48,17 @@ a, button {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Move all items to the left */
+    transform: translateX(-50%); /* Adjust this to the length of the two sets of images */
   }
+}
+
+.brands-container {
+  display: flex;
+  animation: scroll 45s linear infinite; /* Infinite loop */
+}
+
+.brand-item {
+  width: 130px; /* Resize for smaller screens */
 }
 
 /* Responsive design for small screens */
@@ -73,11 +82,5 @@ a, button {
   /* Loop the images by making multiple sets */
   .brands-container {
     animation: scroll 45s linear infinite;
-  }
-
-  .brands-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
   }
 }
