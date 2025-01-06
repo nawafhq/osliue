@@ -25,3 +25,59 @@ a, button {
   background-color: #2AAD5F;
   color: white;
 }
+
+.brands-container {
+  display: flex;
+  gap: 3.75rem;
+  padding-inline: 1.875rem;
+  animation: scroll 45s linear infinite; /* Infinite scroll */
+  overflow: hidden;
+  width: max-content; /* Ensure the width fits the content */
+  flex-shrink: 0;
+}
+
+.brand-item {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  width: 216px; /* Set a specific width for each item */
+  object-fit: contain;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move all items to the left */
+  }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 1024px) {
+  .brands-container {
+    gap: 2rem; /* Adjust gap on smaller screens */
+  }
+
+  /* Show only 3 items at a time on small screens */
+  .brands-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items stay in one row */
+    justify-content: flex-start;
+  }
+
+  /* Optionally, adjust the size of the images for better responsiveness */
+  .brand-item {
+    width: 120px; /* Resize for smaller screens */
+  }
+
+  /* Loop the images by making multiple sets */
+  .brands-container {
+    animation: scroll 45s linear infinite;
+  }
+
+  .brands-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}

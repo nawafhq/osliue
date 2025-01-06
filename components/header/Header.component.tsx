@@ -8,7 +8,7 @@ export default function HeaderComponent() {
           <img alt='Logo' width={1080} height={1080} src='/logo.svg' className='w-10 h-10 object-contain' />
         </a>
         <a>
-          <h1 className='font-bold hover:underline lg:flex hidden'>Create Account</h1>
+          <h1 className='font-bold hover:underline lg:flex hidden'>Log in</h1>
         </a>
         <a>
           <h1 className='font-bold hover:underline'>Contact</h1>
