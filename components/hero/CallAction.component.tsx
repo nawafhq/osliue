@@ -9,7 +9,7 @@ export default function CallAction() {
                     <br />
                     {'Create No Rules'}
                 </h1>
-                <p className='font-medium lg:text-left text-justify'>Unlock your creative potential with our intuitive design platform, built for professionals like you.</p>
+                <p className='font-medium lg:text-left text-center'>Unlock your creative potential with our intuitive design platform, built for professionals like you.</p>
                 <button className='py-3 px-6 rounded-full lg:mt-10 mt-2 bg-[#F2EEE3] text-black font-bold hover:bg-[#ddd9d0]'>Create Account</button>
             </span>
             <div className='flex flex-col justify-start items-center gap-4 lg:w-1/2 w-full'>
